@@ -1,0 +1,32 @@
+commande de Base Linux
+PWD: pour voir a quel niveau on se situe sur le terminal
+ls: pour voir le contenue du dossier
+cd: se place sur un dossier
+mkdir: pour creer un dossier
+touch : pour creer un fichier
+rm -r: pour suprimer un dossier
+
+~ quand on n'est pas root
+/ lorque on est root
+
+mv papa en mam : reviens a renomer le fichier papa en mama
+cp -r  papa  mama: pour copier le contenue du dossier papa dans le dossier mama deja existant
+cp: copier le contenue d'un ficher dans un autre fichier qu'on creer au meme moment
+ex cp md.fg mg.fg.f
+reviens a copier md.fg dans mg.fg.f tout en creeant en meme temps ce ficher
+mv papa  ruth: pour renomer le fichier papa en ruth
+ls -R : pour lister les contenue cacher
+history: pour voir toutes l cmd déjà rensegner
+crtl -r: pour faire la recherche sur une cm déjà validé
+history 20 : pour voir les 20 dernieres ligne
+uname -a : pour les info sur la machine virtuel
+cat /etc/releasefile:
+LScpu : pour voir les infos sur le systeme
+lsmem: pour les infos sur la mémoire
+ls /sbin: pour voir toutes les commande utilisé en tant que super utilisateur
+sudo adduser admin : pour créer un super utilisateur au lieu de pakis ca deviens admin
+ls /home : pour voir les super utilisateur
+sudo addgroup: pour ajouter un super utilisateur
+su -admin : pour se placer en tant que admin
+sudo -pakis : pour se placer en tant que pakis
+
