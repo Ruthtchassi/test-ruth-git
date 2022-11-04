@@ -30,3 +30,53 @@ sudo addgroup: pour ajouter un super utilisateur
 su -admin : pour se placer en tant que admin
 sudo -pakis : pour se placer en tant que pakis
 
+
+pour changer le essage d'un comit
+git commit --amend - " mnew message"
+ pour surpprimer une branche non encore modifier ni comité:
+git branch -d (non de la branche)
+Pour celle dans laquel il y'a déjà les modifications:
+git branch -D (non de la branche)
+
+Pour celle dans laquel il y'a déjà les modifications et qui a été commité qu'on veut suprimer:
+git stash puis on creer la branche sur laquel on va reporter le comit et les modifs et apres 
+git stash list: pour voir la liste des stash et git stash apply ou git stash pop pour rapatrier les modification sur la branche souhaité
+
+si j'ai fait un comit et je realise que j'ai oublier d'ajouter un fichier dans mon commit je pourrais utiliser la commande:
+git add (fichier oublier)
+git commit --amend --no-edit
+
+git reset --hard HEAD Cette ligne de commande va supprimer de la branche principale votre dernier commit.  Le HEAD^ indique que c'est bien le dernier commit que nous voulons supprimer. L’historique sera changé, les fichiers seront supprimés.permet de réinitialiser l'index et le répertoire de travail à l'état du dernier commit.
+Maintenant, vous êtes sur la bonne branche.
+Renouvelez la commande   git reset  , qui va appliquer ce commit sur votre nouvelle branche
+
+Gardez à l'esprit que   git revert  sert à annuler des changements commités, tandis que   git reset HEAD   permet d'annuler des changements non commités
+ Pour générer une paire de clé public ou privé on rentre la commande:
+ssh-Keygen -t rsa -b 4096 -c "ruth@git.com"
+
+git reset notreCommitCible --hard : 
+Cette commande permet de revenir à n'importe quel commit mais en oubliant absolument tout ce qu'il s'est passé après 
+
+git reset --soft  . Cette commande permet de se placer sur un commit spécifique afin de voir le code à un instant donné, ou de créer une branche partant d'un ancien commit. Elle ne supprime aucun fichier, aucun commit, et ne crée pas de HEAD détaché.
+
+Le    git reset --mixed  va permettre de revenir juste après votre dernier commit ou le commit spécifié, sans supprimer vos modifications en cours. Il permet aussi, dans le cas de fichiers indexés mais pas encore commités, de désindexer les fichiers
+
+git reset  va revenir à l'état précédent sans créer un nouveau commit, alors que  git revert  va créer un nouveau commit*
+
+Pour suprimer un  fichier dans un repo on utilise la commande ; 
+git rm -r --cached nondufichier  puis:
+git statut    git add.
+git commit -m "supression fichier"
+git push:
+
+ git reset --hard HEAD~1
+pour suprimer le derniers commit avec les modification y compris 
+
+git reset HEAD~1
+pour suprimer les commits sans les modifications de fichier effectuer
+apres git push 
+git log pour copier le comit
+git revert nom du commit 
+cela va creer automatiquement un autre commit avec une new branche 
+git push et actualise
+git revert
